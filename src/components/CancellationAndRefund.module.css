@@ -1,0 +1,64 @@
+.cancellation {
+    width: 100%;
+    padding: 100px 20px;
+    background-color: #f8fafc;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .backButton {
+    background: none;
+    border: none;
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+  
+  .backButton:hover {
+    text-decoration: underline;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2rem;
+  }
+  
+  .text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 1.4rem;
+  }
+  
+  .list {
+    padding-left: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .list li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .text,
+    .list li {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,107 @@
+.pricing {
+    width: 100%;
+    padding: 5.5rem 1.5rem;
+    background-color: #f8fafc; /* soft light gray */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a; /* near-black */
+    margin-bottom: 0.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.05rem;
+    color: #64748b; /* gray */
+    max-width: 650px;
+    margin: 0 auto 3.5rem auto;
+    line-height: 1.6;
+  }
+  
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Card */
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2.8rem 2.4rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  }
+  
+  /* Card Text */
+  .cardTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cardDescription {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+  }
+  
+  /* List */
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: #334155;
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .check {
+    color: #22c55e;
+    font-weight: 700;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .title {
+      font-size: 1.9rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+  

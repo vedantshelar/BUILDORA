@@ -1,0 +1,136 @@
+.footer {
+    background-color: #0e1525;
+    color: #ffffff;
+    padding: 80px 20px 40px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .topGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .tagline {
+    font-size: 14px;
+    color: #c7cbd6;
+    line-height: 1.6;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #9aa0b4;
+    line-height: 1.7;
+  }
+  
+  .heading {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .links,
+  .contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li,
+  .contact li {
+    font-size: 14px;
+    color: #9aa0b4;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .links li > a{
+    font-size: 14px;
+    color: #9aa0b4;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .links li:hover,
+  .contact li:hover {
+    color: #ffffff;
+  }
+  
+  .cta {
+    margin-top: 8px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 50px 0 24px;
+  }
+  
+  .bottomBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #9aa0b4;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .legalLinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .legalLinks span {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .legalLinks span:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .topGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .topGrid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .column {
+      align-items: center;
+    }
+  
+    .bottomBar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
